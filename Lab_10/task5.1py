@@ -1,0 +1,17 @@
+def safe_divide(numerator, denominator):
+    """
+    Safely divides two numbers and handles division by zero.
+
+    Args:
+        numerator (float): The number to be divided.
+        denominator (float): The number to divide by.
+
+    Returns:
+        float or str: Result of division, or error message if invalid.
+    """
+    return numerator / denominator if denominator != 0 else "Error: Cannot divide by zero."
+
+# Example usage
+result = safe_divide(10, 0)
+print("Result:", result)
+
